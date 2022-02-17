@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+
+        }
+
+        .myheader {
+            height: 520px;
+            margin-top: -150px;            
+        }
+
+        .aurora-outer {
+            background: linear-gradient(45deg, #662d91 0%, #3f6fff 49%, #22B573 82%);
+            background-size: 200%;                        
+            animation: aurora 10s infinite;
+        }
+
+        .aurora-inner {
+            background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+            background-size: 200%;
+            animation: aurora 7s infinite;
+        }
+
+        .title {                        
+            background: linear-gradient(45deg, #222222 0%, #02195c 49%, #222222 82%);
+            background-size: 200%;                        
+            animation: aurora 10s infinite; 
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #222222;
+        }
+
+        @keyframes aurora {
+            0% {
+                background-position: left top;
+            }
+
+            25% {
+                background-position: right top;
+            }
+
+            50% {
+                background-position: right bottom;
+            }
+
+            75% {
+                background-position: left bottom;
+            }
+
+            100% {
+                background-position: left top;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="overflow-x-hidden">
+    <header class="myheader transform -skew-y-3 aurora-outer">
+        
+        <div class="aurora-inner transform skew-y-3 pt-[5%] pb-[20px] lg:px-10">
+            <div class=" lg:px-28 lg:py-4 px-2 py-2 mt-20 mix-blend-color-burn">
+                <div class="lg:grid lg:grid-cols-2 block lg:px-30 lg:pt-16 px-2 py-2 2xl:mx-[200px]">
+                    <div class="">
+                        <h1 class="pt-10 mt-24 text-6xl py-10 font-bold title">La billetera digital y videojuegos
+                            financieros para los jóvenes</h1>
+                    </div>
+                    <div class="lg:inline-block hidden">
+                        <img class="absolute" height="300" width="600" src="./mockup-phone-cards.png" alt="">
+                    </div>
+                </div>
+                <div class="px-2 py-2 2xl:mx-[200px]">
+                    <div class="lg:grid lg:grid-cols-2 block">
+                        <div class="">
+                            <p class="text-gray-600 text-xl font-light">Para ser de los primeros en tener tu cuenta
+                                bancaria y tarjeta de débito Visa® FinZi</p>
+                            <div class="pt-10 flex">
+                                <button href="#"
+                                    class="flex py-4 px-8 text-sm font-semibold text-white rounded-full aurora-outer">
+                                    &#128522 Únete Ahora
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <section class="text-gray-600 body-font mt-80 lg:mt-[500px] pt-20">
+        <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-[#662d91] inline-flex"></div>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4">Beneficios</h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Abre tu cuenta en minutos directo desde tu app y comienza a ahorrar, enviar y recibir dinero al instante</p>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0">
+                        <img src="./moneda1.png" alt="" srcset="">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Usa tu dinero inteligentemente</h2>
+                        <p class="leading-relaxed text-base">Maneja tus ingresos con una billetera 100% digital diseñada
+                            a tu medida</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0">
+                        <img src="./moneda1.png" alt="" srcset="">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Accede a tu dinero desde cualquier lugar</h2>
+                        <p class="leading-relaxed text-base">Usa tu tarjeta de débito Visa® física o virtual en más de
+                            40 millones de comercios</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0">
+                        <img src="./moneda1.png" alt="" srcset="">
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Entiende sobre finanzas jugando</h2>
+                        <p class="leading-relaxed text-base">Entiende sobre finanzas jugando y aprende de la manera más
+                            parchada y divertida</p>
+                    </div>
+                </div>
+            </div>
+            <button href="#"
+                class="flex mx-auto py-4 mt-16 px-8 text-sm font-semibold text-white rounded-full aurora-outer">
+                Únete
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-20 py-24 mx-auto flex flex-wrap">
+          <img src="https://res.cloudinary.com/vrlps/image/upload/v1644960410/8dcAmEogYZCT6ZNaSsblKcwsXl8.png" width="400" alt="" srcset="">
+          <div class="md:w-3/5 md:pl-6 m-auto">
+            <h2 class="sm:text-2xl text-2xl text-gray-900 font-semibold title-font mb-2">FinZi está enfocada en empoderar a los jóvenes y enseñarles a manejar su propio dinero.</h2>
+            <p class="leading-relaxed text-base">Creada para jóvenes como tú, con la misión de darte las herramientas para que comiences a construir un futuro bien bacano.</p>           
+          </div>
+        </div>
+      </section>
+    <footer>
+        <div class="p-10">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 FinZi
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <a class="text-gray-500" href="https://www.facebook.com/gaming/finzi.co" target="_blank">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="https://www.instagram.com/finzi.co/" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/finzi-co" target="_blank">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+    </footer>
+</body>
+
+</html>
